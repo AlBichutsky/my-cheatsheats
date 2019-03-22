@@ -1,17 +1,23 @@
 # Содержание
 
-+ Network utilities
++ [**Network utilities**](#Network#utilities)
     + [netstat](#netstat)
     + [ss](#ss)
     + [nmap](#nmap)
     + [lsof](#lsof)
++ [**Logging**](#Logging)
+    + [lnav](lnav)
+    + [tail](tail)
+    + [cat](cat)
+    + [less](less)
+    + [zcat](zcat)
 
 
 ## **Network utilities**
 
-#### netstat
+##### netstat
 ######   
-```bash
+```
 netstat -lntup
 netstat -lntup | grep "nginx"  # узнать какой порт слушает nginx
 netstat -lntup | grep ":80"  # узнать, какой сервис использует порт 80
@@ -21,24 +27,24 @@ netstat -lntup | grep ":80"  # узнать, какой сервис испол�
 * -u отображает все соединения UDP
 * -p позволяет выводить имя приложения/программы, прослушивающее порт
 
-#### ss 
+##### ss 
 ######
-```bash
+```
 ss -lntu
 ```
 
-#### nmap
+##### nmap
 ###### 
-```bash
+```
 sudo apt install nmap  # On Debian/Ubuntu
 sudo yum install nmap  # On CentOS/RHEL
 sudo dnf install nmap  # On Fedora 22+
 nmap -n -PN -sT -sU -p- localhost  # просканировать все доступные порты на localhost
 ```
 
-#### lsof
+##### lsof
 ######
-```bash
+```
 lsof -i  # вывести все интернет-файлы и сетевые файлы
 lsof -i :80
 ```
