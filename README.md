@@ -11,6 +11,8 @@
     + [cat](cat)
     + [less](less)
     + [zcat](zcat)
+    + [syslog](syslog)
+    + [elastic search](#elastic#search)
 
 
 ## **Network utilities**
