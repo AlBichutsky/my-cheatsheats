@@ -8,27 +8,27 @@
 
 
 ```
-$ netstat -lntup
-$ netstat -lntup | grep "nginx"
-$ netstat -lntup | grep ":80"
+netstat -lntup
+netstat -lntup | grep "nginx"
+netstat -lntup | grep ":80"
 ```
 
 ## **ss** 
 
 ```
-$ ss -lntu
+ss -lntu
 ```
 
 ## **nmap** 
 ```
-$ sudo apt install nmap  # On Debian/Ubuntu
-$ sudo yum install nmap  # On CentOS/RHEL
-$ sudo dnf install nmap  # On Fedora 22+
-$ nmap -n -PN -sT -sU -p- localhost  # просканировать все доступные порты на localhost
+sudo apt install nmap  # On Debian/Ubuntu
+sudo yum install nmap  # On CentOS/RHEL
+sudo dnf install nmap  # On Fedora 22+
+nmap -n -PN -sT -sU -p- localhost  # просканировать все доступные порты на localhost
 ```
 
 ## **lsof**
 ```
-$ lsof -i  # вывести все интернет-файлы и сетевые файлы
-$ lsof -i :80
+lsof -i  # вывести все интернет-файлы и сетевые файлы
+lsof -i :80
 ```
