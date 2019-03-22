@@ -21,8 +21,8 @@
 ######   
 ```bash
 netstat -lntup
-netstat -tulnp | grep "nginx"  # узнать какой порт слушает nginx
-netstat -tulnp | grep ":80"  # узнать, какой сервис использует порт 80
+netstat -tulnp | grep "nginx"  # show nginx port
+netstat -tulnp | grep ":80"  # show service is used port 80
 ```
 * `-l` указывает netstat вывести все прослушивающие сокеты (сокет это ip + порт)
 * `-t` показывает все TCP-соединения
@@ -30,7 +30,7 @@ netstat -tulnp | grep ":80"  # узнать, какой сервис испол�
 * `-p` позволяет выводить имя приложения/программы, прослушивающее порт
 
 ### ss
-###### **Анализ сетевых соединений (вместо устаревшей netstat)**
+###### **ss is used to dump socket statistics. It allows showing information similar to netstat. It can display more TCP and state informations than other tools**. 
 ```bash
 ss -tulnp
 ss -tulnp | grep "8080"
