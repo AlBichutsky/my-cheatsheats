@@ -17,7 +17,7 @@
 
 ##### netstat
 ######   
-```
+```bash
 netstat -lntup
 netstat -lntup | grep "nginx"  # узнать какой порт слушает nginx
 netstat -lntup | grep ":80"  # узнать, какой сервис использует порт 80
@@ -29,13 +29,13 @@ netstat -lntup | grep ":80"  # узнать, какой сервис испол�
 
 ##### ss 
 ######
-```
+```bash
 ss -lntu
 ```
 
 ##### nmap
 ###### 
-```
+```bash
 sudo apt install nmap  # On Debian/Ubuntu
 sudo yum install nmap  # On CentOS/RHEL
 sudo dnf install nmap  # On Fedora 22+
@@ -44,7 +44,7 @@ nmap -n -PN -sT -sU -p- localhost  # просканировать все дос�
 
 ##### lsof
 ######
-```
+```bash
 lsof -i  # вывести все интернет-файлы и сетевые файлы
 lsof -i :80
 ```
