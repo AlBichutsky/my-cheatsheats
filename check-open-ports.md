@@ -1,6 +1,6 @@
 # Содержание
 
-+ [Network utilities](#Network utilities)
++ Network utilities
     + [netstat](#netstat)
     + [ss](#ss)
     + [nmap](#nmap)
