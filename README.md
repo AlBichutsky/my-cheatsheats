@@ -31,7 +31,8 @@ netstat -tulnp | grep ":80"  # узнать, какой сервис испол�
 ###### **Анализ сетевых соединений (замена netstat)**
 ```bash
 ss -tulnp
-ss -tulnp | grep
+ss -tulnp | grep "8080"
+ss -tulnp | grep "java"
 ```
 
 ### nmap
