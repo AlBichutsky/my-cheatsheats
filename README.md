@@ -89,8 +89,8 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 
 ### /etc/mdadm.conf
 ###### /etc/mdadm.conf or /etc/mdadm/mdadm.conf (on debian) is the main configuration file for mdadm. After we create our RAID arrays we can use this commands (optional)
-- `mdadm --detail --scan >> /etc/mdadm.conf` -- on Centos
-- `mdadm --detail --scan >> /etc/mdadm/mdadm.conf` -- on Debian 
+- `mdadm --detail --scan >> /etc/mdadm.conf` -- use on Centos
+- `mdadm --detail --scan >> /etc/mdadm/mdadm.conf` -- use on Debian 
 
 ### Verifying the status of the RAID arrays
 - `cat /proc/mdstat`
@@ -100,11 +100,11 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 
 ### netstat
 ######   
-```bash
-netstat -lntup
-netstat -tulnp | grep "nginx"  # show nginx port
-netstat -tulnp | grep ":80"  # show service is used port 80
-```
+
+- `netstat -lntup`
+- `netstat -tulnp | grep "nginx"`  -- show nginx port
+- `netstat -tulnp | grep ":80"`  -- show service is used port 80
+
 * `-l` указывает netstat вывести все прослушивающие сокеты (сокет это ip + порт)
 * `-t` показывает все TCP-соединения
 * `-u` отображает все соединения UDP
@@ -112,24 +112,18 @@ netstat -tulnp | grep ":80"  # show service is used port 80
 
 ### ss
 ###### **ss is used to dump socket statistics. It allows showing information similar to netstat. It can display more TCP and state informations than other tools**. 
-```bash
-ss -tulnp
-ss -tulnp | grep "8080"
-ss -tulnp | grep "java"
-```
+`ss -tulnp`
+`ss -tulnp | grep "8080"`
+`ss -tulnp | grep "java"`
 
 ### nmap
 ###### 
-```bash
-sudo apt install nmap  # On Debian/Ubuntu
-sudo yum install nmap  # On CentOS/RHEL
-sudo dnf install nmap  # On Fedora 22+
-nmap -n -PN -sT -sU -p- localhost  # просканировать все доступные порты на localhost
-```
+`apt install nmap`  -- On Debian/Ubuntu
+`yum install nmap`  -- On CentOS/RHEL
+`dnf install nmap`  -- On Fedora 22+
+`nmap -n -PN -sT -sU -p- localhost`  -- просканировать все доступные порты на localhost
 
 ### lsof
 ######
-```bash
-lsof -i  # вывести все интернет-файлы и сетевые файлы
-lsof -i :80
-```
+`lsof -i`  -- вывести все интернет-файлы и сетевые файлы
+`lsof -i :80`
