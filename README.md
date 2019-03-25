@@ -98,6 +98,7 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 ### Verifying the status of the RAID arrays
 - `cat /proc/mdstat`
 - `mdadm --detail /dev/md0`
+- `watch cat /proc/mdstat`   -- While monitoring the status of a RAID rebuild operation using watch can be useful
 
 # **Network utilities**
 
