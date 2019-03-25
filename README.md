@@ -13,6 +13,7 @@
     + [zcat](zcat)
     + [syslog](syslog)
     + [elastic search](#elastic#search)
++ [**Backup**](#Backup)
 
 
 ## **Network utilities**
