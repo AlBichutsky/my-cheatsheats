@@ -8,6 +8,7 @@
     + [ss](#ss)
     + [nmap](#nmap)
     + [lsof](#lsof)
++ [**LVM**](#LVM)
 + [**Logging**](#Logging)
     + [lnav](lnav)
     + [tail](tail)
