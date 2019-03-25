@@ -12,6 +12,7 @@
     + [Creating a new RAID-array](#RAID-array)
     + [/etc/mdadm.conf](#mdadm.conf)
     + [Verifying the status of the RAID arrays](#arrays)
+    + [Remove and add a disk from an array](#Remove array)
 + [**LVM**](#LVM)
 + [**Logging**](#Logging)
     + [lnav](lnav)
@@ -137,6 +138,7 @@ mdadm --add /dev/md0 /dev/sdb1
 
 ### nmap
 ###### 
+
 `apt install nmap`  -- On Debian/Ubuntu
 `yum install nmap`  -- On CentOS/RHEL
 `dnf install nmap`  -- On Fedora 22+
