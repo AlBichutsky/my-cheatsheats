@@ -91,7 +91,7 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 - `mdadm --create --verbose /dev/md0 -l 10 -n 4 /dev/sd{b,c,d,e}`   -- Create new RAID-array level 10 
 
 ### /etc/mdadm.conf
-###### /etc/mdadm.conf or /etc/mdadm/mdadm.conf (on debian) is the main configuration file for mdadm in old versions fo Linux. After we create our RAID arrays we can optional use this commands.
+###### /etc/mdadm.conf or /etc/mdadm/mdadm.conf (on debian) is the main configuration file for mdadm in old versions fo Linux. After we create our RAID arrays we can add configuration of RAID in mdadm.conf.
 - `mdadm --detail --scan >> /etc/mdadm.conf` -- use on Centos
 - `mdadm --detail --scan >> /etc/mdadm/mdadm.conf` -- use on Debian 
 
