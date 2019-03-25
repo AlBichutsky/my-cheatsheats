@@ -124,9 +124,9 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 `apt install nmap`  -- On Debian/Ubuntu
 `yum install nmap`  -- On CentOS/RHEL
 `dnf install nmap`  -- On Fedora 22+
-`nmap -n -PN -sT -sU -p- localhost`  -- просканировать все доступные порты на localhost
+`nmap -n -PN -sT -sU -p- localhost`
 
 ### lsof
 ######
-`lsof -i`  -- вывести все интернет-файлы и сетевые файлы
+`lsof -i`
 `lsof -i :80`
