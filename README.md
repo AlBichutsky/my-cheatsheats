@@ -100,6 +100,20 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 - `mdadm --detail /dev/md0`
 - `watch cat /proc/mdstat`   -- While monitoring the status of a RAID rebuild operation using `watch` can be useful
 
+### Remove and add a disk from an array
+````bash
+# We can’t remove a disk directly from the array, unless it is failed, so we first have to fail it (if the drive it is failed this is normally already in failed state and this step is not needed):
+mdadm --fail /dev/md0 /dev/sda1
+
+# And now we can remove it:
+mdadm --remove /dev/md0 /dev/sda1
+
+# Add a disk to an existing array
+# We can add a new disk to an array (replacing a failed one probably):
+
+mdadm --add /dev/md0 /dev/sdb1
+````
+
 # **Network utilities**
 
 ### netstat
