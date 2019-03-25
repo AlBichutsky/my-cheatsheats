@@ -9,7 +9,6 @@
     + [nmap](#nmap)
     + [lsof](#lsof)
 + [**RAID**](#RAID)
-    + [mdadm](#mdadm)
 + [**LVM**](#LVM)
 + [**Logging**](#Logging)
     + [lnav](lnav)
