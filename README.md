@@ -78,7 +78,7 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 ### Notes
 - If you are using [VVV](https://github.com/varying-vagrant-vagrants/vvv/), you can enable xdebug by running `vagrant ssh` and then `xdebug_on` from the virtual machine's CLI.
 
-## **Network utilities**
+# **Network utilities**
 
 ### netstat
 ######   
