@@ -14,6 +14,7 @@
     + [syslog](syslog)
     + [elastic search](#elastic#search)
 + [**Backup**](#Backup)
+    + [bacula](bacula)
 
 
 ## **Network utilities**
