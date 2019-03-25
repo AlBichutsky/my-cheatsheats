@@ -102,7 +102,8 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 
 ### Remove and add a disk from an array
 ````bash
-# We can’t remove a disk directly from the array, unless it is failed, so we first have to fail it (if the drive it is failed this is normally already in failed state and this step is not needed):
+# We can’t remove a disk directly from the array, unless it is failed. 
+# so we first have to fail it (if the drive it is already failed this step is not needed):
 mdadm --fail /dev/md0 /dev/sda1
 
 # And now we can remove it:
