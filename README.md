@@ -83,8 +83,14 @@ Be sure that you are in the same directory as the Vagrantfile when running these
 # **RAID**
 
 ### Creating a new RAID-array
+- `yum install -y mdadm`  -- Installing mdmadm
 - `mdadm --create --verbose /dev/md0 --level=1 /dev/sda1 /dev/sdb2`   -- Create new RAID-array level 1
 - `mdadm --create --verbose /dev/md0 -l 10 -n 4 /dev/sd{b,c,d,e}`   -- Create new RAID-array level 10 
+
+### /etc/mdadm.conf
+###### /etc/mdadm.conf or /etc/mdadm/mdadm.conf (on debian) is the main configuration file for mdadm. After we create our RAID arrays we can use this commands (optional)
+- `mdadm --detail --scan >> /etc/mdadm.conf` -- on Centos
+- `mdadm --detail --scan >> /etc/mdadm/mdadm.conf` -- on Debian 
 
 ### Verifying the status of the RAID arrays
 - `cat /proc/mdstat`
