@@ -20,8 +20,12 @@
     + [cat](cat)
     + [less](less)
     + [zcat](zcat)
+    + [journald](journald)
     + [syslog](syslog)
     + [elastic search](#elastic#search)
++ [**Perfomance**](**Perfomance**)
+    + top
+    + atop
 + [**Backup**](#Backup)
     + [bacula](bacula)
 
