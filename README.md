@@ -184,6 +184,7 @@ $ psql -h 127.0.0.1 -U bacula
 ```
 
 ## bconsole commands 
+Take from: https://workaround.org/bacula-cheatsheet/
 
 ### What’s up?
 - `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
