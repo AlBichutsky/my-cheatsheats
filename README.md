@@ -152,3 +152,38 @@ mdadm --add /dev/md0 /dev/sdb1
 ######
 `lsof -i`
 `lsof -i :80`
+
+# Bacula
+###### **Bacula is a nifty backup software that is network-capable and stores data in the database for faster retrieval in case you need a certain file back. As a big fan of cheat sheets I created this cheat sheet.**
+
+## bconsole
+### What’s up?
+
+`show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
+
+`status dir` -- What’s the server doing?
+
+`status jobid=xx` -- What’s the status of a certain job?
+
+`status client` -- What’s the client doing
+
+`status storage` -- What’s the streamer doing?
+
+`messages` -- Anything new?
+
+## Backing up
+
+`run` `…and choose the backup job` -- Start a backup	
+
+`label`	`…and run mount afterwards` -- Label a new tape	
+
+## Restoring
+
+The common way (a user accidentally removed a file and wants the newest version back from the tapes:
+
+Use the `restore` command.
+Choose option `5 (Select the most recent backup for a client)`
+
+`cd` / `ls` / `dir` / `mark` / `markdir` / `unmark` / `unmarkdir` / `lsmark` / `estimate` / `pwd` / `count` / `find` / `add`
+
+`done`
