@@ -166,12 +166,12 @@ mdadm --add /dev/md0 /dev/sdb1
 - `status storage` -- What’s the streamer doing?
 - `messages` -- Anything new?
 
-## Backing up
+### Backing up
 
 - `run` `…and choose the backup job` -- Start a backup	
 - `label`	`…and run mount afterwards` -- Label a new tape	
 
-## Restoring
+### Restoring
 
 The common way (a user accidentally removed a file and wants the newest version back from the tapes:
 
@@ -180,13 +180,13 @@ The common way (a user accidentally removed a file and wants the newest version 
 3. `cd` / `ls` / `dir` / `mark` / `markdir` / `unmark` / `unmarkdir` / `lsmark` / `estimate` / `pwd` / `count` / `find` / `add`
 4. `done`
 
-## Jobs
+### Jobs
 
 - `list jobs` or `list jobid=xx` -- for a specific job Last jobs
 - `list jobtotal` -- Statistics about last jobs	
 - `list files jobid=xx` -- Which files were backed up?	
 
-## Status
+### Status
 
 - `T` -- Terminated normally
 - `C` -- Created but not yet running
