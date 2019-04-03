@@ -186,3 +186,31 @@ The common way (a user accidentally removed a file and wants the newest version 
 3. `cd` / `ls` / `dir` / `mark` / `markdir` / `unmark` / `unmarkdir` / `lsmark` / `estimate` / `pwd` / `count` / `find` / `add`
 4. `done`
 
+## Jobs
+
+- `list jobs` or `list jobid=xx` -- for a specific job Last jobs
+- `list jobtotal` -- Statistics about last jobs	
+- `list files jobid=xx` -- Which files were backed up?	
+
+## Status
+
+- `T` -- Terminated normally
+- `C` -- Created but not yet running
+- `R` -- Running
+- `B` -- Blocked
+- `E` -- Terminated in Error
+- `e` -- Non-fatal error
+- `f` -- Fatal error
+- `D` -- Verify Differences
+- `A` -- Canceled by the user
+- `F` -- Waiting on the File daemon
+- `S` -- Waiting on the Storage daemon
+- `m` -- Waiting for a new Volume to be mounted
+- `M` -- Waiting for a Mount
+- `s` -- Waiting for Storage resource
+- `j` -- Waiting for Job resource
+- `c` -- Waiting for Client resource
+- `d` -- Wating for Maximum jobs
+- `t` -- Waiting for Start Time
+- `p` -- Waiting for higher priority job to finish
+- `W` -- Terminated with warnings
