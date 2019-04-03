@@ -156,7 +156,36 @@ mdadm --add /dev/md0 /dev/sdb1
 # Bacula
 ###### **Bacula is a nifty backup software that is network-capable and stores data in the database for faster retrieval in case you need a certain file back. As a big fan of cheat sheets I created this cheat sheet.**
 
-## bconsole
+## Set password for Bacula's DB and check connecting
+
+Copy user's db password from file `.pgpass`: 
+```
+$ cat /var/spool/bacula/.pgpass 
+localhost:5432:bacula:bacula:YjJhMDk2ODI4ZjUwOTI0Y2NmMTE0N2ZiY
+```
+Paste password in section `Generic catalog service` of file bacula-dir.conf. Example:
+```
+$ cat /etc/bacula/bacula-dir.conf
+...
+# Generic catalog service
+Catalog {
+  Name = MyCatalog
+  dbname = "bacula"; DB Address = "127.0.0.1"; dbuser = "bacula"; password = "YjJhMDk2ODI4ZjUwOTI0Y2NmMTE0N2ZiY"
+}
+...
+```
+Run `bconsole`
+```
+$ bconsole
+```
+Try connect to db:
+```
+$ psql -h 127.0.0.1 -U bacula
+```
+
+
+## bconsole 
+
 ### What’s up?
 - `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
 - `status dir` -- What’s the server doing?
