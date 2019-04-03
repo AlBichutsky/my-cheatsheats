@@ -160,21 +160,15 @@ mdadm --add /dev/md0 /dev/sdb1
 ### What’s up?
 
 - `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
-
 - `status dir` -- What’s the server doing?
-
 - `status jobid=xx` -- What’s the status of a certain job?
-
 - `status client` -- What’s the client doing
-
 - `status storage` -- What’s the streamer doing?
-
 - `messages` -- Anything new?
 
 ## Backing up
 
 - `run` `…and choose the backup job` -- Start a backup	
-
 - `label`	`…and run mount afterwards` -- Label a new tape	
 
 ## Restoring
