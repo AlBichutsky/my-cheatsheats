@@ -156,7 +156,7 @@ mdadm --add /dev/md0 /dev/sdb1
 # Bacula
 ###### **Bacula is a nifty backup software that is network-capable and stores data in the database for faster retrieval in case you need a certain file back. As a big fan of cheat sheets I created this cheat sheet.**
 
-## Set password for Bacula's DB and check connecting
+## Set DB-connection in Bacula
 
 Copy user's db password from file `.pgpass`: 
 ```
