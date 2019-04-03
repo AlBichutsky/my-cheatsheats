@@ -207,13 +207,13 @@ The common way (a user accidentally removed a file and wants the newest version 
 
 ### Tapes
 
-`list media` -- Which tapes are in the pool?	
-`delete media` -- Remove a tape	
-`list pools` -- Which pools are defined?	
-`list jobmedia` -- Which tapes are/were used for a certain job?	
-`add` -- Assign a tape to a certain pool	
-`update volume` -- Change parameters of a tape
+- `list media` -- Which tapes are in the pool?	
+- `delete media` -- Remove a tape	
+- `list pools` -- Which pools are defined?	
+- `list jobmedia` -- Which tapes are/were used for a certain job?	
+- `add` -- Assign a tape to a certain pool	
+- `update volume` -- Change parameters of a tape
 
 ### Troubleshooting
 
-`Erase a label on the tape	mt rewind && mt weof && mt rewind`
+- `Erase a label on the tape	mt rewind && mt weof && mt rewind`
