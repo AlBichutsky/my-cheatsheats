@@ -187,7 +187,7 @@ The common way (a user accidentally removed a file and wants the newest version 
 - `list files jobid=xx` -- Which files were backed up?	
 
 ### Status
-
+**Status**   **means…**
 - `T` -- Terminated normally
 - `C` -- Created but not yet running
 - `R` -- Running
