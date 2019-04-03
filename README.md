@@ -159,31 +159,30 @@ mdadm --add /dev/md0 /dev/sdb1
 ## bconsole
 ### What’s up?
 
-`show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
+- `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
 
-`status dir` -- What’s the server doing?
+- `status dir` -- What’s the server doing?
 
-`status jobid=xx` -- What’s the status of a certain job?
+- `status jobid=xx` -- What’s the status of a certain job?
 
-`status client` -- What’s the client doing
+- `status client` -- What’s the client doing
 
-`status storage` -- What’s the streamer doing?
+- `status storage` -- What’s the streamer doing?
 
-`messages` -- Anything new?
+- `messages` -- Anything new?
 
 ## Backing up
 
-`run` `…and choose the backup job` -- Start a backup	
+- `run` `…and choose the backup job` -- Start a backup	
 
-`label`	`…and run mount afterwards` -- Label a new tape	
+- `label`	`…and run mount afterwards` -- Label a new tape	
 
 ## Restoring
 
 The common way (a user accidentally removed a file and wants the newest version back from the tapes:
 
-Use the `restore` command.
-Choose option `5 (Select the most recent backup for a client)`
+1. Use the `restore` command.
+2. Choose option `5 (Select the most recent backup for a client)`
+3. `cd` / `ls` / `dir` / `mark` / `markdir` / `unmark` / `unmarkdir` / `lsmark` / `estimate` / `pwd` / `count` / `find` / `add`
+4. `done`
 
-`cd` / `ls` / `dir` / `mark` / `markdir` / `unmark` / `unmarkdir` / `lsmark` / `estimate` / `pwd` / `count` / `find` / `add`
-
-`done`
