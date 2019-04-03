@@ -158,7 +158,6 @@ mdadm --add /dev/md0 /dev/sdb1
 
 ## bconsole
 ### What’s up?
-
 - `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
 - `status dir` -- What’s the server doing?
 - `status jobid=xx` -- What’s the status of a certain job?
@@ -167,12 +166,10 @@ mdadm --add /dev/md0 /dev/sdb1
 - `messages` -- Anything new?
 
 ### Backing up
-
 - `run` `…and choose the backup job` -- Start a backup	
 - `label`	`…and run mount afterwards` -- Label a new tape	
 
 ### Restoring
-
 The common way (a user accidentally removed a file and wants the newest version back from the tapes:
 
 1. Use the `restore` command.
@@ -181,7 +178,6 @@ The common way (a user accidentally removed a file and wants the newest version 
 4. `done`
 
 ### Jobs
-
 - `list jobs` or `list jobid=xx` -- for a specific job Last jobs
 - `list jobtotal` -- Statistics about last jobs	
 - `list files jobid=xx` -- Which files were backed up?	
@@ -208,3 +204,16 @@ The common way (a user accidentally removed a file and wants the newest version 
 - `t` -- Waiting for Start Time
 - `p` -- Waiting for higher priority job to finish
 - `W` -- Terminated with warnings
+
+### Tapes
+
+`list media` -- Which tapes are in the pool?	
+`delete media` -- Remove a tape	
+`list pools` -- Which pools are defined?	
+`list jobmedia` -- Which tapes are/were used for a certain job?	
+`add` -- Assign a tape to a certain pool	
+`update volume` -- Change parameters of a tape
+
+### Troubleshooting
+
+`Erase a label on the tape	mt rewind && mt weof && mt rewind`
