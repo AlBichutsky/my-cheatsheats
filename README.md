@@ -206,7 +206,6 @@ The common way (a user accidentally removed a file and wants the newest version 
 - `W` -- Terminated with warnings
 
 ### Tapes
-
 - `list media` -- Which tapes are in the pool?	
 - `delete media` -- Remove a tape	
 - `list pools` -- Which pools are defined?	
@@ -215,5 +214,4 @@ The common way (a user accidentally removed a file and wants the newest version 
 - `update volume` -- Change parameters of a tape
 
 ### Troubleshooting
-
 - `Erase a label on the tape	mt rewind && mt weof && mt rewind`
