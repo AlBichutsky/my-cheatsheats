@@ -156,6 +156,11 @@ mdadm --add /dev/md0 /dev/sdb1
 # Bacula
 ###### **Bacula is a nifty backup software that is network-capable and stores data in the database for faster retrieval in case you need a certain file back. As a big fan of cheat sheets I created this cheat sheet.**
 
+## Set type of DB 
+###### Run comand in linux-console before configure bacula-director
+```
+alternatives --config libbaccats.so
+```
 ## Set DB-connection in Bacula
 
 Copy user's db password from file `.pgpass`: 
@@ -184,7 +189,7 @@ $ psql -h 127.0.0.1 -U bacula
 ```
 
 ## bconsole commands 
-Take from: https://workaround.org/bacula-cheatsheet/
+###### Take from: https://workaround.org/bacula-cheatsheet/
 
 ### What’s up?
 - `show filesets` `I=Included E=Excluded` -- Which files shall be backed up?
@@ -244,3 +249,9 @@ The common way (a user accidentally removed a file and wants the newest version 
 
 ### Troubleshooting
 - `Erase a label on the tape	mt rewind && mt weof && mt rewind`
+
+## Validate configiration of bacula director (check /etc/bacula/bacula-dir.conf)
+###### Run comand in linux-console
+```
+sudo bacula-dir -tc /etc/bacula/bacula-dir.conf
+```
