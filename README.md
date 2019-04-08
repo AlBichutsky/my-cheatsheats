@@ -199,6 +199,9 @@ $ psql -h 127.0.0.1 -U bacula
 - `status storage` -- What’s the streamer doing?
 - `messages` -- Anything new?
 
+### Reload
+- `reload` -- reload bacula-director (after edit /etc/bacula/bacula-dir.conf)
+
 ### Backing up
 - `run` `…and choose the backup job` -- Start a backup	
 - `label`	`…and run mount afterwards` -- Label a new tape	
