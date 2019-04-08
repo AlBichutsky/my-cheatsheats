@@ -253,5 +253,6 @@ The common way (a user accidentally removed a file and wants the newest version 
 ## Validate configiration of bacula director
 ###### Run comand in linux-console after edit /etc/bacula/bacula-dir.conf
 ```
+systemctl restart bacula-dir
 sudo bacula-dir -tc /etc/bacula/bacula-dir.conf
 ```
