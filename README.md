@@ -161,7 +161,7 @@ mdadm --add /dev/md0 /dev/sdb1
 ```
 alternatives --config libbaccats.so
 ```
-## Set DB-connection in Bacula
+## Set connection to DB postgres in Bacula
 
 Copy user's db password from file `.pgpass`: 
 ```
