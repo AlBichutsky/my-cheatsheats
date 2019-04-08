@@ -250,8 +250,8 @@ The common way (a user accidentally removed a file and wants the newest version 
 ### Troubleshooting
 - `Erase a label on the tape	mt rewind && mt weof && mt rewind`
 
-## Validate configiration of bacula director (check /etc/bacula/bacula-dir.conf)
-###### Run comand in linux-console
+## Validate configiration of bacula director
+###### Run comand in linux-console after edit /etc/bacula/bacula-dir.conf
 ```
 sudo bacula-dir -tc /etc/bacula/bacula-dir.conf
 ```
