@@ -2,7 +2,7 @@
 + [**GIT**](#GIT)
 + [**Virtualisation**](#Virtualisation)
     + [VirtualBox](#VirtualBox)
-    + [Vagrand](#Vagrand)
+    + [Vagrant](#Vagrand)
 + [**Network utilities**](#Network#utilities)
     + [netstat](#netstat)
     + [ss](#ss)
